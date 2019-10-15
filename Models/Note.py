@@ -7,7 +7,7 @@ class Note:
     # method to create a note
     def create_note(self):
         # to create a file and write data for user note
-        note_file = open(self.title, "w")
+        note_file = open("./Notes_Data/" + self.title, "w")
         note_file.write(self.body)
 
-        print("\n Congratulations, note saved")
+        print("\nCongratulations, note saved !!!")
